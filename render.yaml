@@ -1,10 +1,8 @@
+type: blueprint
+name: n8n-whatsapp-ia
 services:
-  - type: web
-    runtime: docker
-    name: n8n-whatsapp-ia
+  - name: n8n-whatsapp-ia
+    env: docker
     plan: free
-    autoDeploy: true
     dockerComposeFilePath: docker-compose.yml
-    envVars:
-      - key: PORT
-        value: "5678"
+    autoDeploy: true
