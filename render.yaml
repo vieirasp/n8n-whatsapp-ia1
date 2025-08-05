@@ -1,7 +1,6 @@
-type: blueprint
-name: n8n-whatsapp-ia
 services:
-  - name: n8n-whatsapp-ia
+  - type: web
+    name: n8n-whatsapp-ia
     env: docker
     plan: free
     dockerComposeFilePath: docker-compose.yml
