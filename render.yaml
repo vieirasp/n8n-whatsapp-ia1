@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: n8n-whatsapp-ia
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerComposeFilePath: docker-compose.yml
